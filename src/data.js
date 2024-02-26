@@ -27,7 +27,6 @@ export const data = {
         { to: 'couple', text: 'Couple' },
         { to: 'events', text: 'Events' },
         { to: 'moment', text: 'Moment' },
-        { to: 'lovestory', text: 'Love Story' },
         { to: 'gifts', text: 'Gifts' },
         { to: 'location', text: 'Location' },
       ],
