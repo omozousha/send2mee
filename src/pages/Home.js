@@ -12,6 +12,7 @@ import Location from '../parts/Location';
 import Footer from '../parts/Footer';
 import GreetingCard from '../parts/GreetingCard';
 import UserDisplay from '../components/UserDisplay';
+import LoveStory from '../parts/LoveStory';
 
 const Home = ({ data }) => {
   const [firstLoad, setFirstLoad] = useState(true);
@@ -34,6 +35,7 @@ const Home = ({ data }) => {
           <Couple data={data.couple} />
           <Events data={data.events} />
           <Moment data={data.moment} />
+          <LoveStory />
           <Gifts data={data.gifts} />
           <Location data={data.location} />
           <GreetingCard data={data.events} />

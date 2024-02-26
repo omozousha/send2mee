@@ -20,6 +20,7 @@
   margin: 0 auto; /* Center the card horizontally */
   text-align: center;
   transition: max-width 0.3s ease; /* Add transition effect to max-width */
+  margin-bottom: 20%;
 }
 
 .info-container {
