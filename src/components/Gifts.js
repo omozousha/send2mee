@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Gifts.css';
 import hoverSound from './assets/hover-sound.mp3';
+import Title from './Title';
 
 
 const Gifts = () => {
@@ -82,6 +83,8 @@ const Gifts = () => {
   };
 
   return (
+    <section className="gifts container" id="gifts">
+    <Title title="Gifts" />
     <div className="kartus" id="kartus">
       <img
         src="https://img.icons8.com/ios-filled/50/e83e8c/wedding-gift.png"
@@ -128,7 +131,7 @@ const Gifts = () => {
         />
         <h2 className="h2-class">Jessica Berliana</h2>
         <p id="nomorRekening 2">
-        <span className='norek'>6460326654</span>
+        <span className='norek'>6460326645</span>
         </p>
         <button
           className="copy-button"
@@ -140,6 +143,7 @@ const Gifts = () => {
 
       <audio id="hover-sound" src="" preload="auto"></audio>
     </div>
+    </section>
   );
 };
 

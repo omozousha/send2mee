@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './LoveStory.css';
+import Title from '../components/Title';
+
 
 const LoveStory = () => {
   const loveStoryChapters = [
@@ -53,6 +55,8 @@ const LoveStory = () => {
   };
 
   return (
+    <section id="lovestory">
+    <Title title="Love Story" />
     <div id="love-container">
       <div id="love-story">{loveStoryChapters[currentChapter]}</div>
       <div id="pagination"></div>
@@ -60,6 +64,7 @@ const LoveStory = () => {
         Next
       </button>
     </div>
+    </section>
   );
 };
 
