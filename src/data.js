@@ -27,6 +27,7 @@ export const data = {
         { to: 'couple', text: 'Couple' },
         { to: 'events', text: 'Events' },
         { to: 'moment', text: 'Moment' },
+        { to: 'lovestory', text: 'Love Story' },
         { to: 'gifts', text: 'Gifts' },
         { to: 'location', text: 'Location' },
       ],
@@ -141,7 +142,7 @@ export const data = {
         name: 'Bank BCA',
         icon: 'https://cdn3.iconfinder.com/data/icons/banks-in-indonesia-logo-badge/100/BCA-512.png',
         account: 'Jessica Berliana',
-        number: '64603266',
+        number: '6460326654',
       },
     },
     location: {
