@@ -36,6 +36,7 @@ const Home = ({ data }) => {
           <Moment data={data.moment} />
           <Gifts data={data.gifts} />
           <Location data={data.location} />
+          <LoveStory data={data.lovestory} />
           <GreetingCard data={data.events} />
           <Footer data={data.footer} />
           <Snowfall
