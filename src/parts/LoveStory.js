@@ -65,6 +65,7 @@ const LoveStory = () => {
     <section id="lovestory">
       <Title title="Love Story" />
       <div id="love-container">
+      <Title className="title" />
         <div id="love-story"></div>
         <div id="pagination"></div>
         <button id="next-btn" onClick={nextChapter}>
