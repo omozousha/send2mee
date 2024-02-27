@@ -9,8 +9,8 @@ body {
 
 #love-container {
   width: 70vw;
-  height: 17vh;
-  max-height: 17vh;
+  height: 25vh;
+  max-height: 25vh;
   margin: 50px auto;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.2); /* Transparan glossy */
