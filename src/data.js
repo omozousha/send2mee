@@ -99,32 +99,38 @@ export const data = {
     moment: {
       images: [
         {
-          src: require('./assets/images/moment/DSCF0032.png'),
-          thumbnail: require('./assets/images/moment/thumbnails/DSCF0032.png'),
+          src: require('./assets/images/moment/01.png'),
+          thumbnail: require('./assets/images/moment/thumbnails/01.png'),
           thumbnailWidth: 240,
           thumbnailHeight: 320,
         },
         {
-          src: require('./assets/images/moment/DSCF0032.png'),
-          thumbnail: require('./assets/images/moment/thumbnails/DSCF0032.png'),
+          src: require('./assets/images/moment/02.png'),
+          thumbnail: require('./assets/images/moment/thumbnails/02.png'),
           thumbnailWidth: 240,
           thumbnailHeight: 320,
         },
         {
-          src: require('./assets/images/moment/DSCF0032.png'),
-          thumbnail: require('./assets/images/moment/thumbnails/DSCF0032.png'),
+          src: require('./assets/images/moment/03.png'),
+          thumbnail: require('./assets/images/moment/thumbnails/03.png'),
           thumbnailWidth: 240,
           thumbnailHeight: 320,
         },
         {
-          src: require('./assets/images/moment/DSCF0032.png'),
-          thumbnail: require('./assets/images/moment/thumbnails/DSCF0032.png'),
+          src: require('./assets/images/moment/04.png'),
+          thumbnail: require('./assets/images/moment/thumbnails/04.png'),
           thumbnailWidth: 240,
           thumbnailHeight: 320,
         },
         {
-          src: require('./assets/images/moment/DSCF0032.png'),
-          thumbnail: require('./assets/images/moment/thumbnails/DSCF0032.png'),
+          src: require('./assets/images/moment/05.png'),
+          thumbnail: require('./assets/images/moment/thumbnails/05.png'),
+          thumbnailWidth: 240,
+          thumbnailHeight: 320,
+        },
+        {
+          src: require('./assets/images/moment/06.png'),
+          thumbnail: require('./assets/images/moment/thumbnails/06.png'),
           thumbnailWidth: 240,
           thumbnailHeight: 320,
         },
