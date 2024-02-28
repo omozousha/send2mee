@@ -83,7 +83,9 @@ const Gifts = () => {
   };
 
   return (
-    <section className="gifts container" id="gifts">
+    <section className="gifts container" id="gifts"
+    data-aos={data.status === 'GROOM' ? 'fade-right' : 'fade-left'}
+    data-aos-duration="1500">
     <Title title="Gifts" />
     <div className="kartus" id="kartus">
       <img
