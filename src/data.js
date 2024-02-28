@@ -36,7 +36,7 @@ export const data = {
       title: 'Meet Happy Couple',
       groom: {
         name: 'HOT TIOPAN TAMPUBOLON',
-        photo: 'https://i.postimg.cc/J7T77ThY/groom.png',
+        photo: 'https://i.postimg.cc/J7T77ThY/groom.webp',
         status: 'GROOM',
         socmed: {
           facebook: '',
@@ -47,7 +47,7 @@ export const data = {
       },
       bride: {
         name: 'JESSICA BERLIANA',
-        photo: 'https://i.postimg.cc/htmKrc1N/bride.png',
+        photo: 'https://i.postimg.cc/htmKrc1N/bride.webp',
         status: 'BRIDE',
         socmed: {
           facebook: '',
