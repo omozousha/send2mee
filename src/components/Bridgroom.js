@@ -1,5 +1,5 @@
 import React from 'react';
-
+import LazyLoad from 'react-lazyload';
 const line = require('../assets/images/icons/line.svg');
 
 const Bridgroom = ({ data }) => {
@@ -21,28 +21,31 @@ const Bridgroom = ({ data }) => {
   };
 
   return (
-    <div
-      className="bridegroom col-md-6 d-flex flex-column justify-content-center align-items-center mb-5"
-      data-aos={data.status === 'GROOM' ? 'fade-right' : 'fade-left'}
-      data-aos-duration="1500">
-      <div className="profil">
-        <img src={data.photo} alt="foto" style={{ width: '450px', marginLeft: '-165px' }} />
-      </div>
-      <div className="h2 mt-3">{data.name}</div>
-      <div className="status d-flex justify-content-center align-items-center mb-1">
-        <div className="line">
-          <img src={line} alt="line" />
+    <LazyLoad height={200} offset={100}>
+      <div
+        className="bridegroom col-md-6 d-flex flex-column justify-content-center align-items-center mb-5"
+        data-aos={data.status === 'GROOM' ? 'fade-right' : 'fade-left'}
+        data-aos-duration="1500"
+      >
+        <div className="profil">
+          <img src={data.photo} alt="foto" style={{ width: '450px', marginLeft: '-165px' }} />
         </div>
-        <div className="h3">{data.status}</div>
-        <div className="line">
-          <img src={line} alt="line" />
+        <div className="h2 mt-3">{data.name}</div>
+        <div className="status d-flex justify-content-center align-items-center mb-1">
+          <div className="line">
+            <img src={line} alt="line" />
+          </div>
+          <div className="h3">{data.status}</div>
+          <div className="line">
+            <img src={line} alt="line" />
+          </div>
         </div>
+        <div className="socmed d-flex justify-content-around align-items-center mb-3">
+          {renderSocmed('instagram')}
+        </div>
+        <div className="h4 text-center">{data.description}</div>
       </div>
-      <div className="socmed d-flex justify-content-around align-items-center mb-3">
-        {renderSocmed('instagram')}
-      </div>
-      <div className="h4 text-center">{data.description}</div>
-    </div>
+    </LazyLoad>
   );
 };
 
