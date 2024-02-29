@@ -51,9 +51,7 @@ const Rsvpmaster = () => {
   }, []);
 
   return (
-    <div className="form-container"
-    data-aos={data.status === 'GROOM' ? 'fade-right' : 'fade-left'}
-    data-aos-duration="1500">
+    <div className="form-container">
       <Title title="Greeting Card" />
       <div className="form">
         <form onSubmit={(e) => e.preventDefault()}>
