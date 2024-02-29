@@ -6,6 +6,10 @@ import Bridgroom from '../components/Bridgroom';
 const Couple = ({ data }) => {
   return (
     <section className="couple container" id="couple">
+      <Title title={data.quote} className="quote" />
+      <br />
+      <br />
+      <br />
       <Title title={data.title} />
       <div className="row mt-4">
         <Bridgroom data={data.groom} />

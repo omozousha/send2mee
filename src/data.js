@@ -33,6 +33,7 @@ export const data = {
       ],
     },
     couple: {
+      quote: 'Markus 10:9 "Karena itu, apa yang telah dipersatukan Allah, tidak boleh diceraikan manusia.”',
       title: 'Meet Happy Couple',
       groom: {
         name: 'HOT TIOPAN TAMPUBOLON',
