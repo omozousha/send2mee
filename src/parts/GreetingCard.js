@@ -51,7 +51,9 @@ const Rsvpmaster = () => {
   }, []);
 
   return (
-    <div className="form-container">
+    <div className="form-container"
+    data-aos="zoom-in"
+    data-aos-duration="1500">
       <Title title="Greeting Card" />
       <div className="form">
         <form onSubmit={(e) => e.preventDefault()}>
