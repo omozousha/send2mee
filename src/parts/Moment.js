@@ -1,3 +1,4 @@
+// Moment.jsx
 import React from 'react';
 import Gallery from 'react-grid-gallery';
 import Lightbox from 'react-images';
@@ -27,16 +28,16 @@ const Moment = ({ data }) => {
   };
 
   const goToPrevImage = () => {
-    setSelectedImage((prevImage) => (prevImage > 0 ? prevImage - 1 : images.length - 1));
+    setSelectedImage((prevImage) => (prevImage !== undefined && prevImage > 0 ? prevImage - 1 : images.length - 1));
   };
-
+  
   const goToNextImage = () => {
-    setSelectedImage((prevImage) => (prevImage < images.length - 1 ? prevImage + 1 : 0));
+    setSelectedImage((prevImage) => (prevImage !== undefined && prevImage < images.length - 1 ? prevImage + 1 : 0));
   };
 
-  const images = data.images && data.images.map((image, index) => ({
+  const images = data.images.map((image, index) => ({
     ...image,
-    caption: image.caption,
+    caption: image.caption, // Sesuaikan dengan struktur data Anda
     customOverlay: (
       <div className="custom-overlay" onClick={() => openLightbox(index)}>
         <div className="overlay-text">Click to view</div>
