@@ -1,15 +1,50 @@
-.moment {
-  min-height: 100vh;
-  padding: 125px 0 0 0;
+.moment-container {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.2); /* Soft pink background */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Soft pink shadow */
+  margin-bottom: 15%;
+}
 
-  .row {
-    width: 100%;
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
 
-    .wrapper {
-      width: 100%;
-      min-height: 1px;
-      display: block;
-      overflow: auto;
-    }
+/* Lightbox Styles */
+.react-images {
+  color: black;
+  /* Add any specific styles for the lightbox if needed */
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .moment-container {
+    margin: 10px; /* Adjust margin for smaller screens */
   }
 }
+
+/* Additional Styles for Overlay, Thumbnails, etc. */
+.custom-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.2); /* Soft pink overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-text {
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Add any other custom styles for your specific components */
