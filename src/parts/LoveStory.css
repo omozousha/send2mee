@@ -59,3 +59,12 @@
   font-weight: bold;
   color: #e91e63; /* Warna teks nomor halaman */
 }
+
+
+.special-text {
+  color: #e91e63; /* Warna teks */
+  font-size: 30px; /* Ukuran teks */
+  font-weight: bold; /* Ketebalan teks */
+  text-align: center; /* Posisi teks */
+  margin-bottom: 10px; /* Jarak teks ke elemen lain */
+}

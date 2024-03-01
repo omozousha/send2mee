@@ -5,7 +5,7 @@ import Title from '../components/Title';
 const LoveStory = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const stories = [
-    "Our Love Story",
+    <span className="special-text">"Our Love Story"</span>,
     "Pertemuan kami diawali di 9 September 2019 dimana awal pertama kali bertemu dan berkenalan disebuah kantor.",
     "Setelah berkenalan dan pendekatan, opan mengungkapkan perasaannya di 19 Januari 2020.",
     "Banyak suka duka yang kami lewati selama kami menjalin hubungan dan semuanya bukan hal yang mudah sampai akhirnya pada tanggal 19 May 2023 kemarin kami memutuskan untuk hubungan lebih serius."
