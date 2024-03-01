@@ -35,15 +35,15 @@ const Moment = ({ data }) => {
     setSelectedImage((prevImage) => (prevImage < images.length - 1 ? prevImage + 1 : 0));
   };
 
-  const images = data.images.map((image, index) => ({
-    ...image,
-    caption: image.caption, // Sesuaikan dengan struktur data Anda
-    customOverlay: (
-      <div className="custom-overlay" onClick={() => openLightbox(index)}>
-        <div className="overlay-text">Click to view</div>
-      </div>
-    ),
-  }));
+  const images = data.images && data.images.map((image, index) => ({
+  ...image,
+  caption: image.caption,
+  customOverlay: (
+    <div className="custom-overlay" onClick={() => openLightbox(index)}>
+      <div className="overlay-text">Click to view</div>
+    </div>
+  ),
+}));
 
   return (
     <div className="moment-container" id="moment" data-aos="fade-up">
