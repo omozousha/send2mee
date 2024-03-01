@@ -28,12 +28,13 @@ export const data = {
         { to: 'events', text: 'Events' },
         { to: 'moment', text: 'Moment' },
         { to: 'lovestory', text: 'LoveStory' },
-        { to: 'gifts', text: 'Gifts' },
+        { to: 'gifts1', text: 'Gifts' },
         { to: 'location', text: 'Location' },
       ],
     },
     couple: {
-      quote: 'Markus 10:9 "Karena itu, apa yang telah dipersatukan Allah, tidak boleh diceraikan manusia.”',
+      quote1: '"Karena itu, apa yang telah dipersatukan Allah, tidak boleh diceraikan manusia.”',
+      quote2: 'Markus 10:9',
       title: 'Meet Happy Couple',
       groom: {
         name: 'HOT TIOPAN TAMPUBOLON',
