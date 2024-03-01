@@ -7,7 +7,6 @@ import AOS from 'aos';
 import Title from '../components/Title';
 
 const Moment = ({ data }) => {
-  // Inisialisasi AOS pada komponen mount
   React.useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -27,23 +26,23 @@ const Moment = ({ data }) => {
     setLightboxIsOpen(false);
   };
 
-  const goToPrevImage = () => {
-    setSelectedImage((prevImage) => (prevImage > 0 ? prevImage - 1 : images.length - 1));
+  // Render image only if it has valid properties
+  const renderImage = (image, index) => {
+    if (image && image.src) {
+      return {
+        ...image,
+        caption: image.caption,
+        customOverlay: (
+          <div className="custom-overlay" onClick={() => openLightbox(index)}>
+            <div className="overlay-text">Click to view</div>
+          </div>
+        ),
+      };
+    }
+    return null;
   };
 
-  const goToNextImage = () => {
-    setSelectedImage((prevImage) => (prevImage < images.length - 1 ? prevImage + 1 : 0));
-  };
-
-  const images = data.images && data.images.map((image, index) => ({
-  ...image,
-  caption: image.caption,
-  customOverlay: (
-    <div className="custom-overlay" onClick={() => openLightbox(index)}>
-      <div className="overlay-text">Click to view</div>
-    </div>
-  ),
-}));
+  const images = data.images.map(renderImage).filter(Boolean);
 
   return (
     <div className="moment-container" id="moment" data-aos="fade-up">
@@ -74,8 +73,6 @@ const Moment = ({ data }) => {
           isOpen={lightboxIsOpen}
           onClose={closeLightbox}
           currentImage={selectedImage}
-          onClickPrev={goToPrevImage}
-          onClickNext={goToNextImage}
         />
       )}
     </div>
