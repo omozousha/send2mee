@@ -1,13 +1,15 @@
 /* Moment.jsx Styles */
 .moment-container {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.2); /* Soft pink background */
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Soft pink shadow */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 15%;
+  min-height: 300px; /* Sesuaikan dengan kebutuhan */
 }
+
 
 .gallery-card {
   position: relative;
