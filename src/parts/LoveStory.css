@@ -1,94 +1,61 @@
-/* LoveStory.css */
+/* styles.css */
 
-body {
-  font-family: 'Cursive', 'Lucida Handwriting', 'Arial', sans-serif;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-#love-container {
-  width: 70vw;
-  height: 25vh;
-  max-height: 25vh;
-  margin: 50px auto;
+.love-story-card {
+  height: 300px;
+  max-width: 350px;
+  margin: 20px auto;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.2); /* Transparan glossy */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.2); /* Transparan glossy background */
   border-radius: 10px;
-  position: relative;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s ease-out forwards;
-  border: 2px solid #e83e8c; /* Border merah muda */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  position: relative; /* Added */
   margin-bottom: 20%;
 }
 
-#love-story {
-  font-size: 0.9em;
-  line-height: 1.8;
-  color: #e83e8c;
+.story-section {
   margin-bottom: 20px;
-  opacity: 1;
-  transition: opacity 1s ease-in-out;
-  overflow: auto;
-}
-
-@media (max-width: 768px) {
-  #love-story {
-    font-size: 11px;
-  }
-}
-
-#pagination {
-  position: absolute;
-  bottom: 10px; /* Adjust this value as needed */
-  left: 0;
-  right: 0;
-  margin-top: auto;
   text-align: center;
+  color: #e91e63;
+  padding-top: auto;
+  font-size: 20px;
 }
 
-.page-dot {
-  display: inline-block;
-  width: 20px;
-  height: 5px;
-  border-radius: 20%;
-  background-color: #aaa;
-  margin: 0 5px;
-  cursor: pointer;
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
-.page-dot.active {
-  background-color: #e83e8c;
+.fade-in-visible {
+  opacity: 1;
 }
 
-#next-btn {
-  position: absolute;
-  left: 3%;
-  bottom: 20px; /* Adjust this value as needed */
-  display: inline-block;
-  padding: 3px 8px;
-  background-color: #e83e8c;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 0.7em;
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 200px;
+  position: absolute; /* Added */
+  bottom: 20px; /* Added */
+  left: 20px; /* Added */
+  right: 20px; /* Added */
+}
+
+.pagination button {
+  background-color: #e91e63; /* Warna tombol */
+  color: #fff; /* Warna teks tombol */
+  border: none;
+  padding: 8px 12px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease-in-out;
 }
 
-#next-btn:hover {
-  background-color: #c05688;
+.pagination button:hover {
+  background-color: #e91e63; /* Warna tombol saat dihover */
 }
 
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.pagination span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e91e63; /* Warna teks nomor halaman */
 }
-
-.title {
-  margin-top: -25px;
-}  
