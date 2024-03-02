@@ -133,7 +133,7 @@ const Gifts = () => {
         />
         <h2 className="h2-class">Jessica Berliana</h2>
         <p id="nomorRekening 2">
-        <span className='norek'>6460326645</span>
+        <span className='norek'>6460326654</span>
         </p>
         <button
           className="copy-button"
